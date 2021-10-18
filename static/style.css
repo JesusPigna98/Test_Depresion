@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+/* body {
+    background-image: url("../static/imagen-banner-inicio.jpeg");
+    background-size: cover;                 
+    background-repeat: no-repeat;
+} */
+
+body, html { 
+    background: url(../static/imagen-banner-inicio.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  
+    background-size: cover;
+    height: 100%;
+  }
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.intro{
+    font-family: 'Quicksand',sans-serif;   
+    font-weight:700;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    position: absolute;
+    left: 46%;
+    top: 22%;
+    right: 6%
+}
+
+p.parrafos{
+    font-family: 'Just Another Hand', cursive;
+    font-weight:700;
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    position: absolute;
+    left: 46%;
+    top: 22%;
+    right: 6%
+}
+
+.topnav a {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 5px;
+    top: 35px;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+/* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    body, html { 
+       font-size: 2em; 
+    }
+ 
+ }
