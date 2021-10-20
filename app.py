@@ -19,7 +19,8 @@ def index():
     if form.validate_on_submit():
         name = form.name.data
         age = form.age_range.data
-        print(name, age)
+        subm = form.submit.data
+        print(name, age, subm)
         return redirect(url_for('test'))
 
     return render_template('index.html', form=form)

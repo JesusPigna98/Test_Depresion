@@ -97,6 +97,12 @@ body, html {
     left: 47%;
     top: 65%;
     right: 6%;
+
+    -webkit-animation: fadeIn linear 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeIn linear 3s; /* Firefox < 16 */
+    -ms-animation: fadeIn linear 3s; /* Internet Explorer */
+    -o-animation: fadeIn linear 3s; /* Opera < 12.1 */
+    animation: fadeIn linear 3s;
 }
 
 .forms-design-index{
