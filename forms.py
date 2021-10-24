@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SelectField, SubmitField
+from wtforms import StringField, SelectField, SubmitField, RadioField
 from wtforms.validators import DataRequired, InputRequired
 
 
@@ -11,3 +11,57 @@ class startTest(FlaskForm):
                                         ('Adu', '26-35'), ('May', '36+')], validators=[InputRequired()],default="''")
     submit = SubmitField('Comenzar')
 
+
+class quesTest1(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest2(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest3(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest4(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest5(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest6(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest7(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest8(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")
+
+class quesTest9(FlaskForm):
+    q1 = SubmitField("Ningún día")
+    q2 = SubmitField("Varios días")
+    q3 = SubmitField("Más de la mitad de los días")
+    q4 = SubmitField("Casi todos los días")

@@ -7,6 +7,109 @@
 
    {% block content %}
 
+    <p class='intro'>Te proporcionaremos una interpretación de "nivel de depresión" basado en la puntuación de las preguntas respondidas</p> 
+        
+        
+     <form method="POST">
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ pregunta1.hidden_tag() }}
+
+        <div class = "selectors">
+            <div style="margin-top: 120px;">
+            <p class="preguntas">1. Poco interés o placer en hacer las cosas</p>
+            
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+            
+            <div style="margin-top: 40px;">
+            <p class="preguntas">2. Se ha sentido decaído(a), deprimido(a) o sin esperanzas </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">3. Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado  </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">4. Se ha sentido cansado(a) o con poca energía </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">5. Sin apetito o ha comido en exceso </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">6. Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">7. Ha tenido dificultad para concentrarse en ciertas actividades, tales como leer el periódico o ver la televisión </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">8. ¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado? o lo contrario – muy inquieto(a) o agitado(a) que ha estado moviéndose mucho más de lo normal </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+
+
+            <div style="margin-top: 40px;">
+            <p class="preguntas">9. Pensamientos de que estaría mejor muerto(a) o de lastimarse </p>
+                {{pregunta1.q1(class_="buton1", style="margin:10px;")}}
+                {{pregunta1.q2(class_="buton2", style="margin:10px;")}}
+                {{pregunta1.q3(class_="buton3", style="margin:10px;")}}
+                {{pregunta1.q4(class_="buton4", style="margin:10px;")}}
+            </div>
+
+        </div>
+    </form>
+
+
+        
+      
 
 
 

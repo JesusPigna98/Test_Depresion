@@ -6,11 +6,6 @@
     background-size: cover;                 
     background-repeat: no-repeat;
 } */
-header {
-    display: flex;
-    align-items: center;
-    padding: 30px 10%;
-}
 
 body, html { 
     background: url(../imagen-banner-inicio.jpeg) no-repeat center center fixed; 
@@ -95,7 +90,7 @@ body, html {
     text-align: center;
     position: absolute;
     left: 47%;
-    top: 65%;
+    top: 61%;
     right: 6%;
 
     -webkit-animation: fadeIn linear 3s; /* Safari, Chrome and Opera > 12.1 */

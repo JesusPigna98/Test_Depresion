@@ -1,8 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body, html { 
-    background-color: cornflowerblue;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;  
-    background-size: cover;
-    height: 100%;
-  }
+  background: url(../diseno-cuestionario.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;  
+  background-size: cover;
+  height: 100%;
+}
+
+.intro{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1.3vw;
+  color: #717171;
+  text-align: center;
+  line-height: 1.6;
+  position: absolute;
+  left: 25%;
+  top: 14%;
+  right: 25%
+}
+
+.selectors{
+  text-align: center;
+  line-height: 1.6;
+  position: absolute;
+  left: 27%;
+  top: 14%;
+  right: 29%
+}
+
+.preguntas{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:500;
+  font-size: 1.2vw;
+  color: #717171;
+}
+
+
+.buton1{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #005565;
+  border-color: #005565;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+
+}
+
+
+.buton1:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #005565;
+  background-color: #005565;
+}
+
+
+
+
+.buton2{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #01A5B9;
+  border-color: #01A5B9;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+}
+
+
+.buton2:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #01A5B9;
+  background-color: #01A5B9;
+}
+
+
+
+
+.buton3{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #0182D0;
+  border-color: #0182D0;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+}
+
+
+.buton3:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #0182D0;
+  background-color: #0182D0;
+}
+
+
+
+
+.buton4{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #008080;
+  border-color: #008080;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+}
+
+
+.buton4:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #008080;
+  background-color: #008080;
+}
+
+
