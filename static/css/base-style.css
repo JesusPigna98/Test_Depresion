@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body, html { 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;  
     background-size: cover;
-    height: 100%;
   }
 
 header {
