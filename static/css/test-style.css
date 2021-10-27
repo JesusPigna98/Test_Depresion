@@ -1,0 +1,277 @@
+
+body, html { 
+  background: url(../diseno-cuestionario.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;  
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.intro{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1.3vw;
+  color: #717171;
+  text-align: center;
+  line-height: 1.6;
+  position: absolute;
+  left: 25%;
+  top: 14%;
+  right: 25%
+}
+
+.preguntas{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:500;
+  font-size: 1.2vw;
+  color: #717171;
+  position: relative;
+  margin-top: 40px;
+  margin-right: 50%;
+  left: 24%;
+
+
+}
+
+
+.selectors{
+  text-align: center;
+  line-height: 1.6;
+  position: relative;
+  left: 0%;
+  top: 20%;
+  right: 35%;
+  margin-left: 40px;
+}
+
+input[type="radio"]:checked {
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #005565;
+  background-color: #005565;
+}
+
+.buton1{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #005565;
+  border-color: #005565;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+
+}
+
+
+.buton1:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #005565;
+  background-color: #005565;
+}
+
+.active{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #005565;
+  background-color: #005565;
+}
+
+
+
+.buton2{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #01A5B9;
+  border-color: #01A5B9;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+}
+
+
+.buton2:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #01A5B9;
+  background-color: #01A5B9;
+}
+
+
+.active2{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #01A5B9;
+  background-color: #01A5B9;
+}
+
+
+
+.buton3{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #0182D0;
+  border-color: #0182D0;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+}
+
+
+.buton3:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #0182D0;
+  background-color: #0182D0;
+}
+
+.active3{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #0182D0;
+  background-color: #0182D0;
+}
+
+
+
+.buton4{
+  font-family: 'Quicksand',sans-serif;   
+  font-weight:700;
+  font-size: 1vw;
+  color: #008080;
+  border-color: #008080;
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+}
+
+
+.buton4:hover{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #008080;
+  background-color: #008080;
+}
+
+
+.active4{
+  font-family: 'Quicksand',sans-serif;   
+  color: #FFF;
+  border-color: #008080;
+  background-color: #008080;
+}
+
+
+.button-design-test{
+  font-family: 'Quicksand', sans-serif;
+  font-weight:700;
+  color: white;
+  font-size: 1.5vw;
+  
+  background-color: transparent;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: white;
+  
+  width: 300px;
+  height: 60px;
+  
+}
+
+
+#pregunta2{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+
+#pregunta3{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+#pregunta4{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+#pregunta5{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+#pregunta6{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+#pregunta7{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+#pregunta8{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+#pregunta9{
+  -webkit-animation: fadeIn linear 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn linear 1s; /* Firefox < 16 */
+  -ms-animation: fadeIn linear 1s; /* Internet Explorer */
+  -o-animation: fadeIn linear 1s; /* Opera < 12.1 */
+  animation: fadeIn linear 1s;
+}
+
+
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body, html { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  
+    background-size: cover;
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.topnav a {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 5px;
+    top: 35px;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}

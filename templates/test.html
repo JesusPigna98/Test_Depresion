@@ -1,0 +1,284 @@
+   {% extends "base.html" %}
+   {% block title %}Test{% endblock  %}
+
+   {% block head %}<link rel="stylesheet" href="../static/css/test-style.css" />{% endblock  %}
+
+
+
+   {% block content %}
+
+    <p class='intro'>Te proporcionaremos una interpretación de "nivel de depresión" basado en la puntuación de las preguntas respondidas</p> 
+        
+        
+     <form method="POST">
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ form.hidden_tag() }}
+
+        <div class = "selectors">
+            <div id="pregunta1" class="preguntas" style="margin-top: 120px;">
+            <p>1. Poco interés o placer en hacer las cosas</p>
+                <input type="radio" class="btn-check" name="q1" id="q1-1" value=0 onclick="TestsFunction2(event)" autocomplete="off">
+                <label class="btn buton1" for="q1-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q1" id="q1-2" value=1 onclick="TestsFunction2(event)" autocomplete="off">
+                <label class="btn buton2" for="q1-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q1" id="q1-3" value=2 onclick="TestsFunction2(event)" autocomplete="off">
+                <label class="btn buton3" for="q1-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q1" id="q1-4" value=3 onclick="TestsFunction2(event)" autocomplete="off">
+                <label class="btn buton4" for="q1-4">Casi todos los días</label>
+        
+            </div>
+
+
+            
+            <div id="pregunta2" class="preguntas" style="display:none">
+            <p>2. Se ha sentido decaído(a), deprimido(a) o sin esperanzas </p>
+
+                <input type="radio" class="btn-check" name="q2" id="q2-1" value=0 onclick="TestsFunction3(event)" autocomplete="off">
+                <label class="btn buton1" for="q2-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q2" id="q2-2" value=1 onclick="TestsFunction3(event)" autocomplete="off">
+                <label class="btn buton2" for="q2-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q2" id="q2-3" value=2 onclick="TestsFunction3(event)" autocomplete="off">
+                <label class="btn buton3" for="q2-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q2" id="q2-4" value=3 onclick="TestsFunction3(event)" autocomplete="off">
+                <label class="btn buton4" for="q2-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta3" class="preguntas" style="display:none">
+            <p>3. Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado  </p>
+
+                <input type="radio" class="btn-check" name="q3" id="q3-1" value=0 onclick="TestsFunction4(event)" autocomplete="off">
+                <label class="btn buton1" for="q3-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q3" id="q3-2" value=1 onclick="TestsFunction4(event)" autocomplete="off">
+                <label class="btn buton2" for="q3-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q3" id="q3-3" value=2 onclick="TestsFunction4(event)" autocomplete="off">
+                <label class="btn buton3" for="q3-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q3" id="q3-4" value=3 onclick="TestsFunction4(event)" autocomplete="off">
+                <label class="btn buton4" for="q3-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta4" class="preguntas" style="display:none">
+            <p>4. Se ha sentido cansado(a) o con poca energía </p>
+
+                <input type="radio" class="btn-check" name="q4" id="q4-1" value=0 onclick="TestsFunction5(event)" autocomplete="off">
+                <label class="btn buton1" for="q4-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q4" id="q4-2" value=1 onclick="TestsFunction5(event)" autocomplete="off">
+                <label class="btn buton2" for="q4-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q4" id="q4-3" value=2 onclick="TestsFunction5(event)" autocomplete="off">
+                <label class="btn buton3" for="q4-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q4" id="q4-4" value=3 onclick="TestsFunction5(event)" autocomplete="off">
+                <label class="btn buton4" for="q4-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta5" class="preguntas" style="display:none">
+            <p>5. Sin apetito o ha comido en exceso </p>
+
+                <input type="radio" class="btn-check" name="q5" id="q5-1" value=0 onclick="TestsFunction6(event)" autocomplete="off">
+                <label class="btn buton1" for="q5-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q5" id="q5-2" value=1 onclick="TestsFunction6(event)" autocomplete="off">
+                <label class="btn buton2" for="q5-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q5" id="q5-3" value=2 onclick="TestsFunction6(event)" autocomplete="off">
+                <label class="btn buton3" for="q5-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q5" id="q5-4" value=3 onclick="TestsFunction6(event)" autocomplete="off">
+                <label class="btn buton4" for="q5-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta6" class="preguntas" style="display:none">
+            <p>6. Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia </p>
+
+                <input type="radio" class="btn-check" name="q6" id="q6-1" value=0 onclick="TestsFunction7(event)" autocomplete="off">
+                <label class="btn buton1" for="q6-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q6" id="q6-2" value=1 onclick="TestsFunction7(event)" autocomplete="off">
+                <label class="btn buton2" for="q6-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q6" id="q6-3" value=2 onclick="TestsFunction7(event)" autocomplete="off">
+                <label class="btn buton3" for="q6-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q6" id="q6-4" value=3 onclick="TestsFunction7(event)" autocomplete="off">
+                <label class="btn buton4" for="q6-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta7" class="preguntas" style="display:none">
+            <p>7. Ha tenido dificultad para concentrarse en ciertas actividades, tales como leer el periódico o ver la televisión </p>
+
+                <input type="radio" class="btn-check" name="q7" id="q7-1" value=0 onclick="TestsFunction8(event)" autocomplete="off">
+                <label class="btn buton1" for="q7-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q7" id="q7-2" value=1 onclick="TestsFunction8(event)" autocomplete="off">
+                <label class="btn buton2" for="q7-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q7" id="q7-3" value=2 onclick="TestsFunction8(event)" autocomplete="off">
+                <label class="btn buton3" for="q7-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q7" id="q7-4" value=3 onclick="TestsFunction8(event)" autocomplete="off">
+                <label class="btn buton4" for="q7-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta8" class="preguntas"  style="display:none">
+            <p>8. ¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado? o lo contrario – muy inquieto(a) o agitado(a) que ha estado moviéndose mucho más de lo normal </p>
+
+                <input type="radio" class="btn-check" name="q8" id="q8-1" value=0 onclick="TestsFunction9(event)"autocomplete="off">
+                <label class="btn buton1" for="q8-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q8" id="q8-2" value=1 onclick="TestsFunction9(event)"autocomplete="off">
+                <label class="btn buton2" for="q8-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q8" id="q8-3" value=2 onclick="TestsFunction9(event)"autocomplete="off">
+                <label class="btn buton3" for="q8-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q8" id="q8-4" value=3 onclick="TestsFunction9(event)"autocomplete="off">
+                <label class="btn buton4" for="q8-4">Casi todos los días</label>
+            </div>
+
+
+
+            <div id="pregunta9" class="preguntas" style="display:none">
+            <p>9. Pensamientos de que estaría mejor muerto(a) o de lastimarse </p>
+                
+                <input type="radio" class="btn-check" name="q9" id="q9-1" value=0 onclick="submits()" autocomplete="off">
+                <label class="btn buton1" for="q9-1">Ningún día</label>
+
+                <input type="radio" class="btn-check" name="q9" id="q9-2" value=1 onclick="submits()" autocomplete="off">
+                <label class="btn buton2" for="q9-2">Varios días</label>
+
+                <input type="radio" class="btn-check" name="q9" id="q9-3" value=2 onclick="submits()" autocomplete="off">
+                <label class="btn buton3" for="q9-3">Más de la mitad de los días</label>
+
+                <input type="radio" class="btn-check" name="q9" id="q9-4" value=3 onclick="submits()" autocomplete="off">
+                <label class="btn buton4" for="q9-4">Casi todos los días</label>
+                
+            </div>
+
+
+
+            <div id="enviar" class="preguntas" style="display:none">
+                {{form.submit(class_="button-design-test", style="margin:10px;")}}
+            </div>
+
+        </div>
+    </form>
+
+
+<script>
+
+    function TestsFunction2(e) {
+    var preg2 = document.getElementById("pregunta2");
+    var evento = e.target;
+
+    var b1 = document.querySelector(".btn-check #q1-1");
+    var b2 = document.querySelector("#pregunta1 .preg1-2");
+    var b3 = document.querySelector("#pregunta1 .preg1-3");
+    var b4 = document.querySelector("#pregunta1 .preg1-4");
+
+
+    preg2.style.display = "block";  // <-- Set it to block
+    if (evento.id == 'q1-1'){
+        evento.classList.add("active"); 
+
+
+        
+    };
+
+    if (evento.id == 'q2'){
+        b1.classList.remove("active");
+        b3.classList.remove("active3");
+        b4.classList.remove("active4");
+
+        evento.classList.add("active2");
+    };
+    
+
+    if (evento.id == 'q3'){
+        b1.classList.remove("active");
+        b2.classList.remove("active2");
+        b4.classList.remove("active4");
+
+        evento.classList.add("active3");
+    };
+
+
+    if (evento.id == 'q4'){
+        b1.classList.remove("active");
+        b2.classList.remove("active2");
+        b3.classList.remove("active3");
+
+        evento.classList.add("active4");
+    };
+    
+    }
+
+    function TestsFunction3() {
+    var preg3 = document.getElementById("pregunta3");
+    preg3.style.display = "block";  // <-- Set it to block
+    }
+
+    function TestsFunction4() {
+    var preg4 = document.getElementById("pregunta4");
+    preg4.style.display = "block";  // <-- Set it to block
+    }
+
+    function TestsFunction5() {
+    var preg5 = document.getElementById("pregunta5");
+    preg5.style.display = "block";  // <-- Set it to block
+    }
+
+    function TestsFunction6() {
+    var preg6 = document.getElementById("pregunta6");
+    preg6.style.display = "block";  // <-- Set it to block
+    }
+
+    function TestsFunction7() {
+    var preg7 = document.getElementById("pregunta7");
+    preg7.style.display = "block";  // <-- Set it to block
+    }
+
+    function TestsFunction8() {
+    var preg8 = document.getElementById("pregunta8");
+    preg8.style.display = "block";  // <-- Set it to block
+    }
+
+    function TestsFunction9() {
+    var preg9 = document.getElementById("pregunta9");
+    
+
+    preg9.style.display = "block";  // <-- Set it to block
+    }
+
+    function submits() {
+    var sub = document.getElementById("enviar");
+
+    sub.style.display = "block";  // <-- Set it to block
+    }
+
+</script>
+
+
+
+     {% endblock  %}

@@ -1,0 +1,71 @@
+body, html { 
+    background: url(../fondo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;  
+    background-size: cover;
+    padding-bottom: 30px;
+
+    font-family: 'Quicksand',sans-serif;  
+  }
+  
+.resultado{
+    padding: 1px 45%;
+    position: relative;
+}
+
+#res{
+  font-weight:500;
+  font-size: 1.8vw;
+  color: #717171;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.diagnostico{
+  font-weight:700;
+  font-size: 2.3vw;
+  color: #820743;
+  position: relative;
+  text-align: center;
+
+  margin-top: 50px;
+  right: 15px;
+
+}
+
+.recomendaciones{
+  font-weight:700;
+  font-size: 1.5vw;
+  color: #4D4D4D;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top:0.5%;
+  position: relative;
+  text-align: center;
+}
+
+.imagen1{
+    padding-top: 1%;
+    left: 20%;
+    padding-right: 63%;
+    position: absolute;
+    text-align: center;
+}
+
+.imagen2{
+    padding-top: 1%;
+    left: 40%;
+    padding-right:39%;
+    position: absolute;
+    text-align: center;
+}
+
+.imagen3{
+    padding-top: 1%;
+    left: 65%;
+    padding-right:20%;
+    position: absolute;
+    text-align: center;
+}
