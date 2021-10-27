@@ -6,6 +6,5 @@ Flask-WTF==0.15.1
 greenlet==1.1.2
 gunicorn==20.1.0
 Mako==1.1.5
-mkl-service==2.4.0
 SQLAlchemy==1.4.25
 WTForms==2.3.3
