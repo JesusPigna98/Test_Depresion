@@ -1,6 +1,5 @@
 alembic==1.7.4
 certifi==2021.10.8
-click @ file:///tmp/build/80754af9/click_1621604852318/work
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
 Flask-Migrate==3.1.0
 Flask-SQLAlchemy==2.5.1
