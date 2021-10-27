@@ -10,7 +10,7 @@ body, html {
 header {
     display: flex;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 8%;
 }
 
 .topnav a {
