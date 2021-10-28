@@ -79,4 +79,8 @@ def page_not_found(error):
 
 ##########################################
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(debug=False)
+=======
+    app.run(debug=True)
+>>>>>>> c626fbcac4952dd6ca0ae83dfcd7de9ce0312cd2
